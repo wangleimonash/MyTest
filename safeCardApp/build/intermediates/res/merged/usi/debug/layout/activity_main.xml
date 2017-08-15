@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}">
+
+    <FrameLayout
+        android:id="@+id/safe_activity_main_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="#66666666" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RadioGroup
+            android:id="@+id/safe_acivity_main_radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/safe_acivity_main_rb_map"
+                style="@style/radio_Button"
+                android:background="@null"
+                android:checked="true"
+                android:drawableTop="@drawable/safe_activity_tab_btn_home"
+                android:text="@string/tab_home" />
+
+
+            <RadioButton
+                android:id="@+id/safe_acivity_main_rb_record"
+                style="@style/radio_Button"
+                android:background="@null"
+                android:drawableTop="@drawable/safe_activity_tab_btn_record"
+                android:text="@string/tab_record" />
+
+            <RadioButton
+                android:id="@+id/safe_acivity_main_rb_information"
+                style="@style/radio_Button"
+                android:background="@null"
+                android:drawableTop="@drawable/safe_activity_tab__btn_information"
+                android:text="@string/tab_information" />
+
+            <RadioButton
+                android:id="@+id/safe_acivity_main_rb_me"
+                style="@style/radio_Button"
+                android:background="@null"
+                android:drawableTop="@drawable/safe_activity_tab_btn_me"
+                android:text="@string/tab_me" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/safe_transparent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"></RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"></RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_badge"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1">
+                <!--<TextView-->
+                    <!--android:id="@+id/iv_point"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_marginRight="20dp"-->
+                    <!--android:background="@drawable/point_red"-->
+                    <!--android:paddingLeft="4dp"-->
+                    <!--android:paddingRight="4dp"-->
+                    <!--android:textColor="@android:color/white"-->
+                    <!--android:visibility="invisible" />-->
+                <TextView
+                    android:id="@+id/iv_point"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/point_red"
+                    android:textColor="@android:color/white"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"></RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout><!-- From: file:/W:/Android/SvnParent/safeCardApp/src/main/res/layout/activity_main.xml -->

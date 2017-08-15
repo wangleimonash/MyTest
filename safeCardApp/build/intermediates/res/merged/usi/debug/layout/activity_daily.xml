@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical" >
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/title_height"
+		android:background="@drawable/bg_title" >
+
+		<ImageButton
+			android:id="@+id/ib_back"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="10dp"
+			android:background="@drawable/default_btn_bg"
+			android:onClick="finishMyself"
+			android:src="@drawable/ic_back" />
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="@dimen/title_height"
+			android:layout_centerInParent="true"
+			android:gravity="center"
+			android:text="日常表现"
+			android:textColor="@color/safe_white"
+			android:textSize="@dimen/text_size_title_homepage" />
+
+
+	</RelativeLayout>
+
+	<LinearLayout
+		android:id="@+id/ll_date"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<Button
+			android:background="@null"
+			android:id="@+id/bt_pre"
+			android:text="前一天"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+		<TextView
+			android:gravity="center"
+			android:id="@+id/tv_date"
+			android:layout_weight="1"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content" />
+		<Button
+			android:background="@null"
+			android:id="@+id/bt_next"
+			android:text="后一天"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+	<Button
+		android:visibility ="gone"
+		android:id="@+id/btn"
+		android:layout_gravity="center_horizontal"
+		android:layout_width="200dp"
+		android:layout_height="40dp"
+		android:onClick="changeDate"
+		android:text="选择其他日期"
+		android:textColor="@color/safe_white"
+		android:background="@drawable/shape_btn_login"
+		android:layout_marginTop="5dp"
+		/>
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="49dp"
+		android:text="评价："
+		android:textSize="18sp"
+		android:gravity="center"
+		android:layout_marginLeft="20dp"
+		/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="49dp"
+		android:orientation="horizontal"
+		>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="49dp"
+			android:text="德智体美劳"
+			android:textSize="15sp"
+			android:gravity="center"
+			android:layout_marginLeft="20dp"
+			/>
+
+		<ImageView
+			android:id="@+id/iv_1"
+			android:layout_width="20dp"
+			android:layout_height="20dp"
+			android:scaleType="fitXY"
+			android:src="@drawable/ic_star"
+			android:layout_gravity="center_vertical"
+			android:layout_marginLeft="30dp"
+			/>
+
+		<ImageView
+			android:id="@+id/iv_2"
+			android:layout_width="20dp"
+			android:layout_height="20dp"
+			android:scaleType="fitXY"
+			android:src="@drawable/ic_star"
+			android:layout_gravity="center_vertical"
+			android:layout_marginLeft="10dp"
+			/>
+		<ImageView
+			android:id="@+id/iv_3"
+			android:layout_width="20dp"
+			android:layout_height="20dp"
+			android:scaleType="fitXY"
+			android:src="@drawable/ic_star"
+			android:layout_gravity="center_vertical"
+			android:layout_marginLeft="10dp"
+			/>
+		<ImageView
+			android:id="@+id/iv_4"
+			android:layout_width="20dp"
+			android:layout_height="20dp"
+			android:scaleType="fitXY"
+			android:src="@drawable/ic_star"
+			android:layout_gravity="center_vertical"
+			android:layout_marginLeft="10dp"
+			/>
+		<ImageView
+			android:id="@+id/iv_5"
+			android:layout_width="20dp"
+			android:layout_height="20dp"
+			android:scaleType="fitXY"
+			android:src="@drawable/ic_star"
+			android:layout_gravity="center_vertical"
+			android:layout_marginLeft="10dp"
+			/>
+
+	</LinearLayout>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="0.1dp"
+		android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp"
+		android:background="#DDDDDD"
+		/>
+
+	<TextView
+		android:id="@+id/tv_teacher"
+		android:layout_width="wrap_content"
+		android:layout_height="49dp"
+		android:layout_marginLeft="20dp"
+		android:layout_marginTop="10dp"
+		android:gravity="center"
+		android:text="老师备注："
+		android:textSize="15sp" />
+
+	<TextView
+		android:id="@+id/tv_desc"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="20dp"
+		android:gravity="center"
+		android:text="备注为空："
+		android:textSize="13sp"
+		android:textColor="#777777"
+		/>
+
+</LinearLayout>
+<!-- From: file:/W:/Android/SvnParent/safeCardApp/src/main/res/layout/activity_daily.xml -->

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@drawable/bg_title" >
+
+        <ImageButton
+            android:id="@+id/ib_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/default_btn_bg"
+            android:onClick="finishMyself"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/safe_area"
+            android:textColor="@color/safe_white"
+            android:textSize="@dimen/text_size_title_homepage" />
+
+        <ImageButton
+            android:id="@+id/ib_search"
+            android:visibility="invisible"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/default_btn_bg"
+            android:onClick="search"
+            android:src="@drawable/ic_magnify" />
+    </RelativeLayout>
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rl_bottom"
+        android:layout_below="@+id/rl_top" />
+    
+    <TextView 
+        android:id="@+id/tv_radius"
+        android:visibility="invisible"
+            android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="300米"
+                android:layout_centerInParent="true"
+                android:background="@color/safe_red"
+            />
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/safe_white" >
+
+        <LinearLayout           
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_area_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/area_name" />
+
+            <TextView
+                android:id="@+id/tv_location_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/type_and_time_homepage"
+                android:textSize="8sp" />
+            
+            <RelativeLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_add_safe_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addSafeArea"
+                android:text="@string/add_safe_area" />
+            
+            <Button
+                android:id="@+id/btn_edit_safe_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="editSafeArea"
+                android:text="@string/edit_safe_area" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_middle"
+        android:layout_width="200dp"
+        android:layout_height="50dp" 
+        android:visibility="invisible"
+        android:background="@color/safe_yellow"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/rl_top"
+        android:layout_marginTop="20dp"
+        >
+        
+        <LinearLayout android:layout_width="200dp"
+        android:layout_height="50dp" 
+        android:orientation="horizontal"
+        >
+            <TextView 
+            android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="300米"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+            />
+            
+            <SeekBar 
+                android:id="@+id/seekbar"
+                android:layout_gravity="center_vertical"
+                 android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:max="70"                
+                />
+            
+            <TextView 
+            android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="1000米"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+            />
+            
+        </LinearLayout>
+        
+        
+        
+        
+    </RelativeLayout>
+    
+    
+    
+
+</RelativeLayout>

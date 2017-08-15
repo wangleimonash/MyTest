@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:layout_width="match_parent"
+    	android:layout_height="50dp"
+        android:textSize="22sp"
+        android:textColor="#000000"
+        android:text="中 午 休 息"
+        android:gravity="center"
+        />
+    
+
+</LinearLayout>
+<!-- From: file:/W:/Android/SvnParent/safeCardApp/src/main/res/layout/item_lv_schedule_other.xml -->

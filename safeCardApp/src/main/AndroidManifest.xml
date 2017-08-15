@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.hysd.usiapp"
+    android:versionCode="4"
+    android:versionName="1.1">
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="21" />
+
+    <!-- Required  环信-->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 获取手机录音机使用权限，听写、识别、语义理解需要用到此权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 允许程序改变网络连接状态 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- 读取联系人权限，上传联系人需要用到此权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- 发送消息 -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <!-- 阅读消息 -->
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <!-- 写入消息 -->
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <!-- 接收消息 -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 震动权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/>
+    <application
+        android:name="com.xsd.safecardapp.App"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar"
+        tools:replace="name,icon,label,theme">
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="${appkey_baidu_map}" />
+
+        <!-- 设置环信应用的AppKey -->
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="${appkey_easeMob}" />
+        <!-- 声明sdk所需的service SDK核心功能-->
+        <!-- 声明SDK所需的service SDK核心功能-->
+        <service
+            android:name="com.hyphenate.chat.EMChatService"
+            android:exported="true" />
+        <!-- 声明SDK所需的receiver -->
+        <receiver android:name="com.hyphenate.chat.EMMonitorReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+            <!-- 可选filter -->
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.xsd.safecardapp.activity.MainTabActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"></activity>
+        <activity android:name="com.xsd.safecardapp.activity.UserInfoOfCardActivity" />
+        <activity android:name="com.xsd.safecardapp.activity.ShowPathActivity" />
+        <activity android:name="com.xsd.safecardapp.activity.GuideActivity" />
+        <activity android:name="com.xsd.safecardapp.activity.UserLoginActivity"></activity>
+        <activity android:name="com.xsd.safecardapp.activity.UserRegister" />
+        <activity android:name="com.xsd.safecardapp.activity.SafeAreaActivity"></activity>
+        <activity android:name="com.xsd.safecardapp.activity.AddSafeAreaActivity"></activity>
+        <activity android:name="com.xsd.safecardapp.activity.EditSafeAreaActivity"></activity>
+        <activity android:name="com.xsd.safecardapp.activity.OfflineMapActivity"></activity>
+        <activity android:name="com.xsd.safecardapp.activity.BabyInfoActivity"></activity>
+        <activity android:name="com.xsd.safecardapp.activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.xsd.safecardapp.activity.AddDeviceActivity"></activity>
+        <activity android:name="com.xsd.safecardapp.activity.InputDeviceActivity"></activity>
+        <activity android:name="com.xsd.safecardapp.activity.FlashDeviceActivity"></activity>
+        <activity android:name="com.dtr.zxing.activity.CaptureActivity"></activity>
+        <activity android:name="com.dtr.zxing.activity.ResultActivity"></activity>
+        <activity android:name="com.xsd.safecardapp.activity.FamilyActivity"></activity>
+        <activity android:name="com.xsd.safecardapp.activity.ResetPassWordActivity"></activity>
+        <activity android:name="com.xsd.safecardapp.activity.CardInfoActivity"></activity>
+        <activity android:name="com.xsd.safecardapp.activity.MessageItemActivity"></activity>
+        <activity android:name="com.xsd.safecardapp.activity.CreateGesturePasswordActivity"></activity>
+        <activity
+            android:name="com.xsd.safecardapp.activity.UnlockGestureActivity"
+            android:launchMode="singleTop"></activity>
+        <activity android:name="com.xsd.safecardapp.activity.SelectModeActivity"></activity>
+        <activity android:name="com.xsd.safecardapp.activity.ResetGestureActivity"></activity>
+        <activity android:name="com.xsd.safecardapp.activity.ForgetPassWordActivity"></activity>
+        <activity android:name="com.xsd.safecardapp.activity.AlarmRecordActivity"></activity>
+        <activity android:name="com.xsd.safecardapp.activity.AlarmDetailActivity"></activity>
+        <activity android:name="com.xsd.safecardapp.activity.VersionInfoActivity"></activity>
+        <activity android:name="com.xsd.safecardapp.activity.KeySettingActivity"></activity>
+        <activity android:name="com.xsd.safecardapp.activity.ListenActivity"></activity>
+        <activity android:name="com.xsd.safecardapp.activity.ManagerActivity"></activity>
+        <activity
+            android:name="com.xsd.safecardapp.activity.NoDisturbingActivity"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"></activity>
+        <activity android:name="com.xsd.safecardapp.activity.SchoolManageActivity"></activity>
+        <activity android:name="com.xsd.safecardapp.activity.NoticeActivity"></activity>
+        <activity android:name="com.xsd.safecardapp.activity.AttendenceActivity"></activity>
+        <activity android:name="com.xsd.safecardapp.activity.ShowNoDisturbingActivity"></activity>
+        <activity android:name="com.xsd.safecardapp.activity.SugesstionActivity"></activity>
+        <activity android:name="com.xsd.safecardapp.activity.WhitelistActivity"></activity>
+        <activity android:name="com.xsd.safecardapp.activity.WhiteListAddActivity"></activity>
+        <activity android:name="com.xsd.safecardapp.activity.WhiteListEditActivity"></activity>
+        <activity
+            android:name="com.xsd.safecardapp.activity.EditDisturbinActivity"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"></activity>
+        <activity
+            android:name="com.xsd.safecardapp.activity.ScheduleActivity"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"></activity>
+        <activity
+            android:name="com.xsd.safecardapp.activity.DailyPerformanceActivity"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"></activity>
+        <activity android:name="com.xsd.safecardapp.activity.ContactsActivity"></activity>
+        <activity android:name="com.xsd.safecardapp.activity.ChatActivity" />
+        <activity android:name="com.hyphenate.easeui.ui.EaseShowBigImageActivity"></activity>
+        <activity android:name="com.xsd.safecardapp.activity.ListActivity"></activity>
+        <activity android:name="com.xsd.safecardapp.activity.JobActivity"></activity>
+
+        <service android:name="com.xsd.safecardapp.service.CheckNetWorkService">
+            <intente-filter android:priority="1000" />
+        </service>
+        <service android:name="com.xsd.safecardapp.service.HeartBeatService"></service>
+        <service android:name="com.amap.api.location.APSService"/>
+        <!-- ShareSDK内置Activity -->
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <data android:scheme="tencent100371282" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 微信分享回调 -->
+        <activity
+            android:name="com.xsd.safecardapp.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- QQ客户端回调 -->
+        <activity
+            android:name="cn.sharesdk.tencent.qq.ResultReceiver"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter android:priority="1000">
+                <data android:scheme="tencent100371282" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

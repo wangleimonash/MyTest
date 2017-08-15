@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="270dp"
+    android:layout_height="180dp"
+    android:background="@drawable/shape_et_register"
+    
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_setting_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:text="@string/safe_area"
+        android:textSize="15sp" 
+        android:textColor="#838383"
+        />
+
+    <EditText
+        android:id="@+id/et_content"
+        android:paddingLeft="5dp"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_et_register"
+        android:textSize="20sp" />
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <View 
+            android:layout_above="@+id/ll"
+            android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#999999"
+            />
+        
+        <LinearLayout
+            android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="end"
+		android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@color/safe_transparent"
+            android:text="取消"
+            android:textColor="#A4C2DB"
+            android:textSize="14sp" />
+        
+        <View 
+            android:layout_above="@+id/ll"
+            android:layout_width="0.1dp"
+        android:layout_height="40dp"
+        android:background="#999999"
+            />
+        
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@color/safe_transparent"
+            android:text="确定"
+            android:textColor="#A4C2DB"
+            android:textSize="14sp" />
+
+        
+    </LinearLayout>
+        
+        
+    </RelativeLayout>
+
+    
+
+</LinearLayout><!-- From: file:/W:/Android/SvnParent/safeCardApp/src/main/res/layout/popup_setting.xml -->

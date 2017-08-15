@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:shape="oval"
+    android:useLevel="false"
+    
+    >
+    <solid android:color="@color/summer_sky"/>
+
+    <size android:width="20dp"
+          android:height="20dp"/>
+</shape>
+
+<!-- From: file:/W:/Android/SvnParent/safeCardApp/src/main/res/drawable/shape_circle.xml -->

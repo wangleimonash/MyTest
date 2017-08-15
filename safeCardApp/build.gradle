@@ -1,0 +1,134 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion '25.0.0'
+    defaultConfig {
+        applicationId "com.hysd.usiapp"
+        minSdkVersion 15
+        targetSdkVersion 22
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            zipAlignEnabled true
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    sourceSets {
+        drx {
+            java.srcDirs = ['src/main/java', 'src/drx/java']
+        }
+
+        skyworth {
+            java.srcDirs = ['src/main/java', 'src/skyworth/java']
+        }
+
+        usi {
+            java.srcDirs = ['src/main/java', 'src/usi/java']
+        }
+
+        jingyang {
+            java.srcDirs = ['src/main/java', 'src/jingyang/java']
+        }
+    }
+    productFlavors {
+        usi {//优士通
+            versionCode 5
+            versionName '1.2'
+            resValue 'string', 'app_name', '平安通'
+            buildConfigField 'String', 'URL_PATH', '"http://121.40.149.120/API/api.aspx"'
+            buildConfigField 'String', 'URL_PATH_HEART', '"http://121.40.149.120/Html/Home.aspx"'
+            buildConfigField 'String', 'URL_PATH_SHARE_PIC', '"http://121.40.149.120:1188/images/USI_share.png"'
+            buildConfigField 'Boolean', 'SHOULD_BIND', 'true'
+            buildConfigField 'String', 'APK_TYPE', '"1"'
+            manifestPlaceholders = [
+                    appkey_easeMob  : 'huiyunshidai#huiwei',
+                    appkey_baidu_map: 'a7befcb9c41896d8dc78aee930491e3f'
+            ]
+        }
+        drx {//鼎瑞讯
+            applicationId 'com.hysd.drx.parent'
+            resValue 'string', 'app_name', '鼎瑞讯'
+            buildConfigField 'String', 'URL_PATH', '"http://120.24.195.54/API/api.aspx"'
+            buildConfigField 'String', 'URL_PATH_HEART', '"http://120.24.195.54/Html/Home.aspx"'
+            buildConfigField 'String', 'URL_PATH_SHARE_PIC', '"http://sz.iok100.com:1188/images/USI_share.png"'
+            buildConfigField 'Boolean', 'SHOULD_BIND', 'false'
+            buildConfigField 'String', 'APK_TYPE', '"2"'
+            manifestPlaceholders = [
+                    appkey_easeMob  : 'huiyunshidai#drx',
+                    appkey_baidu_map: 'd7de3b012414bdbb13e374c4d097fcc4'
+            ]
+        }
+        skyworth {//创维
+            applicationId 'com.hysd.skyworth.parent'
+            resValue 'string', 'app_name', '创维'
+            buildConfigField 'String', 'URL_PATH', '"http://sz.iok100.com/API/api.aspx"'
+            buildConfigField 'Boolean', 'SHOULD_BIND', 'true'
+            buildConfigField 'String', 'APK_TYPE', '"3"'
+            manifestPlaceholders = [
+                    appkey_easeMob  : 'huiyunshidai#huiwei',
+                    appkey_baidu_map: '44a8c9078baf802f7dfaf175e41c1a2b'
+            ]
+        }
+
+        jingyang {//优士通
+            applicationId 'com.hysd.jingyang.parent'
+            versionCode 1
+            versionName '1.0'
+            resValue 'string', 'app_name', '平安通'
+            buildConfigField 'String', 'URL_PATH', '"http://120.24.220.241/API/api.aspx"'
+            buildConfigField 'String', 'URL_PATH_HEART', '"http://120.24.220.241/Html/Home.aspx"'
+            buildConfigField 'String', 'URL_PATH_SHARE_PIC', '"http://120.24.220.241:1188/images/USI_share.png"'
+            buildConfigField 'Boolean', 'SHOULD_BIND', 'true'
+            buildConfigField 'String', 'APK_TYPE', '"1"'
+            manifestPlaceholders = [
+                    appkey_easeMob  : 'jyhtbds#pinantong',
+                    appkey_baidu_map: '94ecd9cda182088a7b40a324d650c4b6'
+            ]
+        }
+    }
+    signingConfigs {
+        release {
+            /*storeFile file("../yourapp.keystore")
+            storePassword "your password"
+            keyAlias "your alias"
+            keyPassword "your password"*/
+        }
+    }
+    dexOptions {
+        javaMaxHeapSize '4g'
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    compile project(':library')
+    compile project(':easeUI')
+    compile 'com.android.support:support-v4:23.0.1'
+    compile 'com.google.code.gson:gson:2.2.1'
+    compile files('libs/android-viewbadger.jar')
+    compile files('libs/Android_Map_V2.5.0.jar')
+    compile files('libs/commons-httpclient-3.1-alpha1.jar')
+    compile files('libs/hyphenatechat_3.1.2.jar')
+    compile files('libs/MapApiLocation_1.3.3.jar')
+    compile files('libs/MapApiServices.jar')
+    compile files('libs/MobLogCollector.jar')
+    compile files('libs/MobTools.jar')
+    compile files('libs/Msc.jar')
+    compile files('libs/NavigationApi_1.2.0.jar')
+    compile files('libs/ShareSDK-Core-2.6.3.jar')
+    compile files('libs/ShareSDK-QQ-2.6.3.jar')
+    compile files('libs/ShareSDK-QZone-2.6.3.jar')
+    compile files('libs/ShareSDK-ShortMessage-2.6.3.jar')
+    compile files('libs/ShareSDK-SinaWeibo-2.6.3.jar')
+    compile files('libs/ShareSDK-Wechat-2.6.3.jar')
+    compile files('libs/ShareSDK-Wechat-Core-2.6.3.jar')
+    compile files('libs/ShareSDK-Wechat-Favorite-2.6.3.jar')
+    compile files('libs/ShareSDK-Wechat-Moments-2.6.3.jar')
+    compile files('libs/zxing.jar')
+    compile 'org.greenrobot:eventbus:3.0.0'
+}

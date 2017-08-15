@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+ <ListView 
+        android:id="@+id/lv_pop_window_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:dividerHeight="0.0px"
+        android:fastScrollEnabled="true"
+        android:gravity="center"
+        android:scrollbars="none"
+        android:horizontalSpacing="0.0px"
+        android:paddingBottom="70.0px"
+        android:paddingLeft="00.0px"
+        android:paddingRight="00.0px"
+        android:paddingTop="30.0px" />
+
+</LinearLayout>

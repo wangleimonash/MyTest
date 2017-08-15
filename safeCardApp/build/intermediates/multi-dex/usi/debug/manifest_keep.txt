@@ -1,0 +1,67 @@
+-keep class com.xsd.safecardapp.App {
+    <init>();
+    void attachBaseContext(android.content.Context);
+}
+-keep class com.hyphenate.chat.EMChatService { <init>(); }
+-keep class com.hyphenate.chat.EMMonitorReceiver { <init>(); }
+-keep class com.xsd.safecardapp.activity.MainTabActivity { <init>(); }
+-keep class com.xsd.safecardapp.activity.UserInfoOfCardActivity { <init>(); }
+-keep class com.xsd.safecardapp.activity.ShowPathActivity { <init>(); }
+-keep class com.xsd.safecardapp.activity.GuideActivity { <init>(); }
+-keep class com.xsd.safecardapp.activity.UserLoginActivity { <init>(); }
+-keep class com.xsd.safecardapp.activity.UserRegister { <init>(); }
+-keep class com.xsd.safecardapp.activity.SafeAreaActivity { <init>(); }
+-keep class com.xsd.safecardapp.activity.AddSafeAreaActivity { <init>(); }
+-keep class com.xsd.safecardapp.activity.EditSafeAreaActivity { <init>(); }
+-keep class com.xsd.safecardapp.activity.OfflineMapActivity { <init>(); }
+-keep class com.xsd.safecardapp.activity.BabyInfoActivity { <init>(); }
+-keep class com.xsd.safecardapp.activity.SplashActivity { <init>(); }
+-keep class com.xsd.safecardapp.activity.AddDeviceActivity { <init>(); }
+-keep class com.xsd.safecardapp.activity.InputDeviceActivity { <init>(); }
+-keep class com.xsd.safecardapp.activity.FlashDeviceActivity { <init>(); }
+-keep class com.dtr.zxing.activity.CaptureActivity { <init>(); }
+-keep class com.dtr.zxing.activity.ResultActivity { <init>(); }
+-keep class com.xsd.safecardapp.activity.FamilyActivity { <init>(); }
+-keep class com.xsd.safecardapp.activity.ResetPassWordActivity { <init>(); }
+-keep class com.xsd.safecardapp.activity.CardInfoActivity { <init>(); }
+-keep class com.xsd.safecardapp.activity.MessageItemActivity { <init>(); }
+-keep class com.xsd.safecardapp.activity.CreateGesturePasswordActivity { <init>(); }
+-keep class com.xsd.safecardapp.activity.UnlockGestureActivity { <init>(); }
+-keep class com.xsd.safecardapp.activity.SelectModeActivity { <init>(); }
+-keep class com.xsd.safecardapp.activity.ResetGestureActivity { <init>(); }
+-keep class com.xsd.safecardapp.activity.ForgetPassWordActivity { <init>(); }
+-keep class com.xsd.safecardapp.activity.AlarmRecordActivity { <init>(); }
+-keep class com.xsd.safecardapp.activity.AlarmDetailActivity { <init>(); }
+-keep class com.xsd.safecardapp.activity.VersionInfoActivity { <init>(); }
+-keep class com.xsd.safecardapp.activity.KeySettingActivity { <init>(); }
+-keep class com.xsd.safecardapp.activity.ListenActivity { <init>(); }
+-keep class com.xsd.safecardapp.activity.ManagerActivity { <init>(); }
+-keep class com.xsd.safecardapp.activity.NoDisturbingActivity { <init>(); }
+-keep class com.xsd.safecardapp.activity.SchoolManageActivity { <init>(); }
+-keep class com.xsd.safecardapp.activity.NoticeActivity { <init>(); }
+-keep class com.xsd.safecardapp.activity.AttendenceActivity { <init>(); }
+-keep class com.xsd.safecardapp.activity.ShowNoDisturbingActivity { <init>(); }
+-keep class com.xsd.safecardapp.activity.SugesstionActivity { <init>(); }
+-keep class com.xsd.safecardapp.activity.WhitelistActivity { <init>(); }
+-keep class com.xsd.safecardapp.activity.WhiteListAddActivity { <init>(); }
+-keep class com.xsd.safecardapp.activity.WhiteListEditActivity { <init>(); }
+-keep class com.xsd.safecardapp.activity.EditDisturbinActivity { <init>(); }
+-keep class com.xsd.safecardapp.activity.ScheduleActivity { <init>(); }
+-keep class com.xsd.safecardapp.activity.DailyPerformanceActivity { <init>(); }
+-keep class com.xsd.safecardapp.activity.ContactsActivity { <init>(); }
+-keep class com.xsd.safecardapp.activity.ChatActivity { <init>(); }
+-keep class com.hyphenate.easeui.ui.EaseShowBigImageActivity { <init>(); }
+-keep class com.xsd.safecardapp.activity.ListActivity { <init>(); }
+-keep class com.xsd.safecardapp.activity.JobActivity { <init>(); }
+-keep class com.xsd.safecardapp.service.CheckNetWorkService { <init>(); }
+-keep class com.xsd.safecardapp.service.HeartBeatService { <init>(); }
+-keep class com.amap.api.location.APSService { <init>(); }
+-keep class com.mob.tools.MobUIShell { <init>(); }
+-keep class com.xsd.safecardapp.wxapi.WXEntryActivity { <init>(); }
+-keep class cn.sharesdk.tencent.qq.ResultReceiver { <init>(); }
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+-keep public class * extends java.lang.annotation.Annotation {
+    *;
+}

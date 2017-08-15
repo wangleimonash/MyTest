@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <solid android:color="@color/safe_white" />
+
+    <corners
+        android:bottomLeftRadius="2dp"
+        android:bottomRightRadius="2dp"
+        android:topLeftRadius="2dp"
+        android:topRightRadius="2dp" />
+    
+    <stroke 
+        android:width="0.2dp"
+        android:color="@color/et_gray"
+        />
+
+</shape><!-- From: file:/W:/Android/SvnParent/safeCardApp/src/main/res/drawable/shape_et_register.xml -->

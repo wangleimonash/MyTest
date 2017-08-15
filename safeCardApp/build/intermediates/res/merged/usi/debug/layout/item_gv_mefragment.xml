@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal" 
+    android:background="@drawable/selector_gv_bg"
+    android:gravity="center_vertical"
+    >
+
+    <ImageView
+        android:id="@+id/iv_mefragment_gv"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_family_members"
+        android:scaleType="center"
+         />
+
+    <TextView
+        android:gravity="center_vertical"
+        android:id="@+id/tv_mefragment_gv"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginLeft="7.5dp"
+        android:layout_gravity="center"
+        android:text="dsdasdasda"
+        android:textSize="18sp" />
+
+</LinearLayout><!-- From: file:/W:/Android/SvnParent/safeCardApp/src/main/res/layout/item_gv_mefragment.xml -->

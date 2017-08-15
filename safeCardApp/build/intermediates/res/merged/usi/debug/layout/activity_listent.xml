@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/login_gray"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@drawable/bg_title" >
+
+        <ImageButton
+            android:id="@+id/ib_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/default_btn_bg"
+            android:onClick="finishMyself"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/title_height"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="亲情倾听"
+            android:textColor="@color/safe_white"
+            android:textSize="@dimen/text_size_title_homepage" 
+            
+            />
+        
+       
+
+        	
+        
+    </RelativeLayout>
+
+    
+     
+        <LinearLayout 
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"
+            android:background="@drawable/shape_et_register"
+            >
+            
+            <TextView 
+               android:layout_width="wrap_content"
+            android:layout_height="40dp" 
+            android:text="发起监听号码   :"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/safe_main_blue"
+                />
+            
+            <EditText 
+                android:id="@+id/et_number"
+                android:layout_width="match_parent"
+            android:layout_height="40dp" 
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/safe_main_blue"
+            android:inputType="number"
+            android:singleLine="true"
+                />
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"
+            android:background="@drawable/shape_et_register"
+            >
+            
+            <TextView 
+               android:layout_width="wrap_content"
+            android:layout_height="40dp" 
+            android:text="监听时间(分钟):"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/safe_main_blue"
+                />
+            
+            <EditText 
+                android:id="@+id/et_time"
+                android:layout_width="match_parent"
+            android:layout_height="40dp" 
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/safe_main_blue"
+            android:inputType="number"
+            android:singleLine="true"
+                />
+            
+        </LinearLayout>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/primary_text"
+            android:text="注:"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            />
+        
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:text="1、设置完成后点击确定，学生证会自动回拨发起监听号码，接听后即进入监听模式。\n2、监听模式下，学生证无法正常进入通话或结束监听\n3、结束监听需发起监听号码挂机或直到监听时间结束"
+            />
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            >
+        
+        <Button
+            android:id="@+id/btn_ok"
+            
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/selector_btn_login"
+            android:text="确           定" 
+            android:textColor="@color/safe_white"
+            />
+        </RelativeLayout>
+    
+
+</LinearLayout><!-- From: file:/W:/Android/SvnParent/safeCardApp/src/main/res/layout/activity_listent.xml -->

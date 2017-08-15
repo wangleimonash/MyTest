@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_gray"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@drawable/bg_title" >
+
+        <ImageButton
+            android:id="@+id/ib_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/default_btn_bg"
+            android:onClick="finishMyself"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/family"
+            android:textColor="@color/safe_white"
+            android:textSize="@dimen/text_size_title_homepage" />
+       
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_family"
+        android:layout_below="@+id/rl_top"
+        android:dividerHeight="0.5dp"
+        android:divider="#66666666"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp" >
+    </ListView>
+    
+    
+    
+    
+    <Button
+            android:id="@+id/btn_change"
+            android:onClick="changeInfo"
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/selector_btn_login"
+            android:text="修           改" 
+            android:textColor="@color/safe_white"
+            />
+
+</RelativeLayout>

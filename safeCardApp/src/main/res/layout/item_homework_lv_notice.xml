@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_message_icon"
+        android:layout_width="40dp"
+        android:layout_height="100dp" >
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shuxian"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_message_status"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="13dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_time_2" >
+        </ImageView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_toRightOf="@id/rl_message_icon"
+        android:orientation="vertical"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/messagebg"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="语文"
+                android:paddingLeft="8dp"
+                android:textColor="@color/safe_red"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:text="今天"
+                android:textColor="@color/login_blue"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/fengexian_img"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/fenge_2"
+                android:layout_below="@id/tv_time" />
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/tv_title"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:maxLines="3"
+                android:maxWidth="200dp"
+                android:text="What&apos;s Fuadsfasdfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffck this content！！！"
+                android:textSize="14sp" />
+
+            <!--
+            <ImageView
+                android:id="@+id/tv_spread"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/speed_selector" >
+            </ImageView>
+            -->
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

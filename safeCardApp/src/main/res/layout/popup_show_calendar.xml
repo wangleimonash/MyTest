@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="22.0dip"
+        android:background="#ff8091a8" >
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="周日"
+            android:textColor="#ffffffff"
+            android:textSize="14.0dip" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="周一"
+            android:textColor="#ffffffff"
+            android:textSize="14.0dip" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="周二"
+            android:textColor="#ffffffff"
+            android:textSize="14.0dip" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="周三"
+            android:textColor="#ffffffff"
+            android:textSize="14.0dip" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="周四"
+            android:textColor="#ffffffff"
+            android:textSize="14.0dip" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="周五"
+            android:textColor="#ffffffff"
+            android:textSize="14.0dip" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="周六"
+            android:textColor="#ffffffff"
+            android:textSize="14.0dip" />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/me_fragment"
+        android:cacheColorHint="@color/safe_darkgray"
+        android:clickable="true"
+        android:clipChildren="true"
+        android:columnWidth="55.0dip"
+        android:horizontalSpacing="1dp"
+        android:listSelector="@null"
+        android:numColumns="7"
+        android:paddingBottom="1.0dip"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="1dp" />
+
+</LinearLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@drawable/bg_title" >
+
+        <ImageButton
+            android:id="@+id/ib_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/default_btn_bg"
+            android:onClick="finishMyself"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/title_height"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="修改联系人"
+            android:textColor="@color/safe_white"
+            android:textSize="@dimen/text_size_title_homepage" />
+
+        
+    </RelativeLayout>
+    
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/shape_et_register"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="20dp"
+        >
+        
+        
+        <LinearLayout 
+        android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+        >
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="名称："
+            android:layout_marginLeft="20dp"
+            />
+        <EditText 
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/safe_transparent"
+            />
+        
+    </LinearLayout>
+    
+         <View 
+             android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#999999"
+             />
+    <LinearLayout 
+        android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+        >
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="号码："
+            android:layout_marginLeft="20dp"
+            />
+        <EditText 
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/safe_transparent"
+            />
+        
+    </LinearLayout>
+        
+        
+        </LinearLayout>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+            android:layout_height="match_parent"
+        >
+        
+        
+        
+        <Button 
+        android:onClick="commit"
+        android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/selector_btn_login"
+            android:text="确    定"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/safe_white"
+        />
+        
+    </RelativeLayout>
+    
+    
+
+</LinearLayout>

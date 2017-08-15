@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_top_student_attendance"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@drawable/bg_title" >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/default_btn_bg"
+            android:onClick="back"
+            android:src="@drawable/ic_back" >
+        </ImageButton>
+
+        <TextView
+            android:id="@+id/tv_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/title_information"
+            android:textColor="@color/safe_white"
+            android:textSize="@dimen/text_size_title_homepage" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/rl_message_detail__icon"
+            android:layout_width="40dp"
+            android:layout_height="match_parent" >
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:background="#88666666" />
+
+            <ImageView
+                android:id="@+id/iv_message_status"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="26dp"
+                android:background="@drawable/jiaose2" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/rl_message_detail__icon"
+            android:background="@drawable/messageitembg" >
+
+            <TextView
+                android:id="@+id/tv_message_type_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:text="通知:"
+                android:textColor="@color/safe_black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_message_detail_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:gravity="top"
+                android:text="13/09/12 11:11"
+                android:textColor="@color/login_blue"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_detail_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_message_type_label"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="top"
+                android:minHeight="200dp"
+				android:textColor="@color/safe_black"                
+                android:text="aaa"
+                android:textSize="14dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/W:/Android/SvnParent/safeCardApp/src/main/res/layout/activity_messafe_item.xml -->

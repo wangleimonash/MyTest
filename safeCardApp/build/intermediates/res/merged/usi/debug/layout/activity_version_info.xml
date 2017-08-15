@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:id="@+id/rl_top_show_path"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@drawable/bg_title" >
+
+        <ImageButton
+            android:onClick="back"
+            android:id="@+id/ib_back_show_path"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/default_btn_bg"
+            android:src="@drawable/ic_back" >
+        </ImageButton>
+
+        <TextView
+            android:id="@+id/tv_time_show_path"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="版本信息"
+            android:textColor="@color/safe_white"
+            android:textSize="@dimen/safe_com_text_size_normal" 
+            android:background="@drawable/default_btn_bg"
+            />
+    </RelativeLayout>
+    
+    <TextView 
+        android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="10dp"
+            android:textSize="@dimen/safe_com_text_size_normal"
+            android:text="当前版本1.1"
+        />
+    <TextView 
+        
+        android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="30dp"
+            android:textSize="@dimen/safe_com_text_size_small"
+            android:text="1.新增师生圈功能"
+        />
+    
+    <TextView 
+        
+        android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="30dp"
+            android:textSize="@dimen/safe_com_text_size_small"
+            android:text="2.新增日常表现"
+        />
+    
+    <TextView 
+        
+        android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="30dp"
+            android:textSize="@dimen/safe_com_text_size_small"
+            android:text="3.新增课程表"
+        />
+    
+    
+
+</LinearLayout>
+<!-- From: file:/W:/Android/SvnParent/safeCardApp/src/main/res/layout/activity_version_info.xml -->

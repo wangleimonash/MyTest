@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:background="@drawable/selector_mefragment"
+    >
+
+    <TextView
+        android:text=""
+        android:layout_height="50dp"
+        android:id="@+id/tv_select_card"
+        android:layout_width="wrap_content"     
+        android:textSize="15sp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        
+         />
+    
+    <TextView
+        android:text=""
+        android:layout_height="50dp"
+        android:id="@+id/tv_imei"
+        android:layout_width="wrap_content"     
+        android:textSize="15sp"
+        android:gravity="center_vertical"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        
+         />
+    
+    	<View 
+    	android:layout_height="0.3dp"
+        android:layout_width="match_parent"  
+        android:layout_alignParentTop="true" 
+        android:background="#999999"
+    	/>
+
+</RelativeLayout><!-- From: file:/W:/Android/SvnParent/safeCardApp/src/main/res/layout/item_lv_select_card.xml -->

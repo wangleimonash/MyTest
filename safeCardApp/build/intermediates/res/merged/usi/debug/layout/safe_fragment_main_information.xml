@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_xxx"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_naocan">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="#88666666" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_naocan"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/rl_top_student_attendance"
+        android:background="#8DCFFF">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/head_default" />
+        
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:text="优士宝贝"
+            android:textColor="@color/safe_white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="5dp"
+            android:text="点击查看考勤"
+            android:textColor="@color/safe_white"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:id="@+id/rl_top_student_attendance"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@drawable/bg_title">
+
+        <ImageButton
+            android:id="@+id/ib_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/default_btn_bg"
+            android:onClick="back"
+            android:src="@drawable/ic_back"></ImageButton>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/title_information"
+            android:textColor="@color/safe_white"
+            android:textSize="@dimen/text_size_title_homepage" />
+
+        <TextView
+            android:id="@+id/tv_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:text="考勤信息"
+            android:textColor="@color/safe_white"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+    <!-- The PullToRefreshListView replaces a standard ListView widget. -->
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/pull_refresh_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/rl_naocan"
+        android:cacheColorHint="@color/safe_transparent"
+        android:divider="@color/safe_transparent"
+        android:dividerHeight="5dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true" />
+
+    <TextView
+        android:id="@+id/tv_no_info"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/rl_naocan"
+        android:layout_margin="20dp"
+        android:text="暂无信息"
+        android:textSize="15dp"
+        android:visibility="gone" />
+
+
+    <!-- <RelativeLayout 
+        android:id="@+id/rl_empty"
+        android:layout_below="@+id/rl_top_student_attendance"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/safe_white"
+        >
+        
+    </RelativeLayout> -->
+
+
+</RelativeLayout><!-- From: file:/W:/Android/SvnParent/safeCardApp/src/main/res/layout/safe_fragment_main_information.xml -->

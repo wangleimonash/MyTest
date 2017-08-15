@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@drawable/bg_title" >
+
+        
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/title_height"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="设置当前成员"
+            android:textColor="@color/safe_white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+    
+
+</LinearLayout>
+<!-- From: file:/W:/Android/SvnParent/safeCardApp/src/main/res/layout/view_title.xml -->

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/W:/Android/SvnParent/safeCardApp/build/generated/res/resValues/androidTest/usi/debug/values/generated.xml -->
+    <eat-comment/>
+    <string name="app_name">平安通</string>
+</resources>

@@ -1,0 +1,66 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <!-- ============= -->
+    <!-- 公共的基础设置 -->
+    <!-- ============= -->
+    <style name="safe_wrap_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="safe_match_wrap_content">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="safe_match_match_content">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="radio_Button" parent="safe_match_wrap_content">
+        <item name="android:textColor">@drawable/drawable_text_color</item>
+        <item name="android:textSize">@dimen/safe_com_text_size_normal</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+    </style>
+    
+    
+    <style name="add_dialog" parent="@android:style/Theme.Dialog">  
+        <item name="android:windowFrame">@null</item><!-- 边框 -->  
+        <item name="android:windowIsFloating">true</item><!-- 是否浮现在activity之上 -->  
+        <item name="android:windowIsTranslucent">false</item><!-- 半透明 -->  
+        <item name="android:windowNoTitle">true</item><!-- 无标题 -->  
+        <item name="android:windowBackground">@drawable/shape_bg_white</item><!-- 自己想要的背景 -->  
+        <item name="android:backgroundDimEnabled">false</item><!-- 模糊 -->  
+    </style>  
+    
+    
+    <style name="alert_dialog" parent="@android:style/Theme.Dialog">  
+        <item name="android:windowFrame">@null</item><!-- 边框 -->  
+        <item name="android:windowIsFloating">true</item><!-- 是否浮现在activity之上 -->  
+        <item name="android:windowIsTranslucent">false</item><!-- 半透明 -->   
+        <item name="android:windowBackground">@drawable/shape_bg_white</item><!-- 自己想要的背景 -->  
+        <item name="android:backgroundDimEnabled">false</item><!-- 模糊 -->  
+    </style> 
+
+</resources>

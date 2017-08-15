@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@color/safe_transparent" >
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+         >
+
+        
+
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:text="作业"
+            android:textColor="@color/login_blue"
+            android:textSize="12sp" 
+            android:background="@drawable/ic_time"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="100dp"
+        android:background="@drawable/messagebg" >
+        
+        <TextView
+            android:id="@+id/tv_title"
+            android:textColor="@color/login_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="时间："
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:text="时间："
+            android:textColor="@color/login_blue"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_time"            
+            android:textSize="14sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:maxLines="2"
+             />
+    </RelativeLayout>
+
+</RelativeLayout>

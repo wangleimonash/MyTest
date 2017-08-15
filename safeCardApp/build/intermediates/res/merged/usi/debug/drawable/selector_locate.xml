@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+   
+    <item android:drawable="@drawable/btn_position_chose" android:state_pressed="true"></item>
+    <item android:drawable="@drawable/btn_position"></item>
+
+</selector><!-- From: file:/W:/Android/SvnParent/safeCardApp/src/main/res/drawable/selector_locate.xml -->

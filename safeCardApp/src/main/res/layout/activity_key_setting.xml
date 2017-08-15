@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/login_gray"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@drawable/bg_title" >
+
+        <ImageButton
+            android:id="@+id/ib_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/default_btn_bg"
+            android:onClick="finishMyself"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/title_height"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="按键设置"
+            android:textColor="@color/safe_white"
+            android:textSize="@dimen/text_size_title_homepage" 
+            
+            />
+
+        	
+        
+    </RelativeLayout>
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+android:orientation="vertical"
+android:layout_marginLeft="20dp"
+android:layout_marginRight="20dp"        
+android:background="@drawable/shape_et_register"
+android:layout_marginTop="30dp"
+        >
+        
+        <RelativeLayout 
+            android:id="@+id/rl_key_family"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            
+            >
+            
+            <ImageView 
+                android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_set_keys_qinqing"
+            android:layout_marginLeft="10dp"
+                />
+            
+            <TextView 
+                android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="亲情按键设置"
+            android:layout_marginLeft="55dp"
+            android:textColor="@color/safe_main_blue"
+                />
+            
+            <ImageView 
+                android:layout_centerVertical="true"
+        	    android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/map_channel_right_disable"
+        	    />
+            
+            <!-- <View 
+                android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="#777777"
+            android:layout_alignParentBottom="true"
+                /> -->
+            
+        </RelativeLayout>
+        
+        
+        <!-- <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            
+            >
+            
+            <ImageView 
+                android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_set_keys_sos"
+            android:layout_marginLeft="10dp"
+                />
+            
+            <TextView 
+                android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="SOS按键设置"
+            android:layout_marginLeft="55dp"
+            android:textColor="@color/safe_main_blue"
+                />
+            <View 
+                android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="#777777"
+            android:layout_alignParentBottom="true"
+                />
+            
+            <ImageView 
+                android:layout_centerVertical="true"
+        	    android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/map_channel_right_disable"
+        	    />
+            
+        </RelativeLayout> -->
+        
+    </LinearLayout>
+
+</LinearLayout>

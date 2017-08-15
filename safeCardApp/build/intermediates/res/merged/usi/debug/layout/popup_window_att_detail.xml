@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="150dp"
+    android:orientation="vertical" 
+    android:background="@drawable/shape_et_register"
+    >
+
+    <LinearLayout 
+        android:layout_centerInParent="true"
+         android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+        >
+    <ImageView 
+        android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/bg_modify_bang"
+    
+        />
+    <TextView 
+         android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="没有考勤信息！"
+    android:textColor="#777777"
+        />
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/W:/Android/SvnParent/safeCardApp/src/main/res/layout/popup_window_att_detail.xml -->

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true"><shape>
+            <solid android:color="@color/me_fragment" />
+
+            <corners android:bottomLeftRadius="2dp" android:bottomRightRadius="2dp" android:topLeftRadius="2dp" android:topRightRadius="2dp" />
+        </shape></item>
+    <item><shape>
+            <solid android:color="@color/summer_sky" />
+
+            <corners android:bottomLeftRadius="2dp" android:bottomRightRadius="2dp" android:topLeftRadius="2dp" android:topRightRadius="2dp" />
+        </shape></item>
+
+</selector><!-- From: file:/W:/Android/SvnParent/safeCardApp/src/main/res/drawable/selector_btn_login.xml -->

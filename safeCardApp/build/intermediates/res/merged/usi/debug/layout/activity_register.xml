@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    
+    <ImageButton 
+        android:onClick="back"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:background="@color/safe_transparent"
+        android:src="@drawable/ico_back"
+        android:scaleType="centerCrop"
+        android:layout_margin="7dp"
+        />
+
+    <RelativeLayout 
+        android:layout_centerInParent="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    
+
+    <LinearLayout
+        android:id="@+id/ll_username"
+        
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        
+        android:orientation="horizontal" >
+
+        
+
+        <EditText
+            android:hint="账号"
+            android:drawablePadding="5dp"
+            android:id="@+id/et_username"
+            android:singleLine="true"
+            android:paddingLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_height="40dp"
+            android:drawableLeft="@drawable/ico_phone"
+            android:background="@drawable/shape_et_register" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_send_sms"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/ll_username"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        
+
+        <EditText
+            android:hint="验证码"
+            android:drawablePadding="5dp"
+            android:id="@+id/et_sms_number"
+            android:paddingLeft="5dp"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="@drawable/shape_et_register" 
+            android:singleLine="true"
+            android:drawableLeft="@drawable/ico_pen"
+            />
+
+        <Button
+            android:id="@+id/btn_send_sms"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/selector_btn_login"
+            android:onClick="sendSms"
+            android:text="@string/send_sms"
+            android:textColor="@color/safe_white"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_password"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/ll_send_sms"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        
+
+        <EditText
+            android:hint="密码"
+            android:drawablePadding="5dp"
+            android:id="@+id/et_password"
+            android:drawableLeft="@drawable/ico_password"
+            android:paddingLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_height="40dp"
+            android:inputType="textPassword"
+            android:background="@drawable/shape_et_register" 
+            android:singleLine="true"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_password_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/ll_password"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        
+
+        <EditText
+            android:hint="确认密码"
+            android:drawablePadding="5dp"
+            android:id="@+id/et_password_confirm"
+            android:paddingLeft="5dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:drawableLeft="@drawable/ico_password"
+            android:inputType="textPassword"
+            android:background="@drawable/shape_et_register" 
+            android:singleLine="true"
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/ll_password_confirm"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        
+        android:background="@drawable/selector_btn_login"
+        android:onClick="nextStep"
+        android:text="@string/next_step"
+        android:textColor="@color/safe_white"
+        android:textSize="20sp" />
+    
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/W:/Android/SvnParent/safeCardApp/src/main/res/layout/activity_register.xml -->

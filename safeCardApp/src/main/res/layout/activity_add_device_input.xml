@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f9" >
+
+    <ImageView
+        android:visibility="invisible"
+        android:id="@+id/iv_add_device"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="60dp"
+        android:background="@color/safe_transparent"
+        android:src="@drawable/logo_small" />
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/iv_add_device"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:text="请输入设备的手机号或IMEI码"
+        android:textColor="#4e5050"
+        android:textSize="15sp" />
+    <TextView
+        android:id="@+id/ll_dadas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_desc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="请确保设备已插入SIM卡并开机"
+        android:textColor="#4e5050"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_imei"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ll_dadas"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/et_imei"
+            android:layout_width="234dp"
+            android:layout_height="41dp"
+            android:background="@drawable/shape_et_register" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="234dp"
+        android:layout_height="41dp"
+        android:layout_below="@+id/ll_imei"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/selector_btn_login"
+        android:onClick="addDevice"
+        android:text="添加"
+        android:textColor="@color/safe_white"
+        android:textSize="20sp" />
+
+</RelativeLayout>

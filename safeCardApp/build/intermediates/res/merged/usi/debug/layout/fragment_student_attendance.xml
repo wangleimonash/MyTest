@@ -1,0 +1,367 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_cal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_student_attendance" >
+    
+    <RelativeLayout
+                android:id="@+id/rl_top_student_attendance"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_height"
+                android:background="@drawable/bg_title" >
+
+        <ImageButton
+            android:id="@+id/ib_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/default_btn_bg"
+            android:onClick="back"
+            android:src="@drawable/ic_back" >
+        </ImageButton>
+                
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/title_student_attendance"
+                    android:textColor="@color/safe_white"
+                    android:textSize="@dimen/text_size_title_homepage" />
+
+                <TextView
+                    android:id="@+id/tv_select_student"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/student_name"
+                    android:textSize="14sp"
+                    android:singleLine="true"
+                    android:textColor="@color/safe_white"
+                     />
+                
+                
+                
+            </RelativeLayout>
+    
+    <ScrollView 
+        android:layout_below="@+id/rl_top_student_attendance"
+        android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            
+
+            <RelativeLayout
+                android:layout_marginTop="30dp"
+                android:id="@+id/relative_body"
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:layout_below="@+id/rl_top_student_attendance"
+                android:background="@color/safe_white" >
+
+                <RelativeLayout
+                    android:id="@+id/relative_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:layout_alignParentTop="true" >
+                    
+                    <LinearLayout 
+                        android:id="@+id/ll_morning"
+                        android:layout_marginLeft="30dp"
+                        android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                        >
+
+                    <ImageView
+                        android:id="@+id/iv_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/ic_am"
+                        android:gravity="center"
+                        
+                        />
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="上午"
+                        android:textColor="#777777"
+                        />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_line"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_toRightOf="@+id/ll_morning"
+                        android:background="@drawable/vertical_line" />
+
+                    <TextView
+                        android:id="@+id/tv_arrive_school"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_toRightOf="@+id/iv_line"
+                        android:text="到校时间"
+                        android:textColor="#777777"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_leave_school"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_arrive_school"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/iv_line"
+                        android:text="离校时间"
+                        android:textColor="#777777"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_arrive_school_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_toRightOf="@+id/tv_arrive_school"
+                        android:text="- -"
+                        android:textColor="#777777"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_leave_school_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_arrive_school_time"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/tv_arrive_school"
+                        android:text="- -"
+                        android:textColor="#777777"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/relative_iv_line"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relative_up"
+                    android:background="@drawable/horizontal_line" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="75dp"
+                    android:layout_below="@+id/relative_iv_line" >
+
+                    <LinearLayout 
+                        android:id="@+id/ll_afternoon"
+                        android:layout_marginLeft="30dp"
+                        android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                        >
+
+                    <ImageView
+                        android:id="@+id/iv_time_afternoon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/ic_pm"
+                        android:gravity="center"
+                        
+                        />
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="下午"
+                        android:textColor="#777777"
+                        />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_below_line"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_toRightOf="@+id/ll_afternoon"
+                        android:background="@drawable/vertical_line" />
+
+                    <TextView
+                        android:id="@+id/tv_below_arrive_school"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_toRightOf="@+id/iv_below_line"
+                        android:text="到校时间"
+                        android:textColor="#777777"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_below_leave_school"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_below_arrive_school"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/iv_below_line"
+                        android:text="离校时间"
+                        android:textColor="#777777"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_below_arrive_school_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_toRightOf="@+id/tv_below_arrive_school"
+                        android:text="- -"
+                        android:textColor="#777777"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_below_leave_school_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_below_arrive_school_time"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/tv_below_arrive_school"
+                        android:text="- -"
+                        android:textColor="#777777"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            
+
+           
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_line_week"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_marginTop="30dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="22.0dip"
+                    android:background="#ff8091a8" >
+
+                    <TextView
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:text="周日"
+                        android:textColor="#ffffffff"
+                        android:textSize="14.0dip" />
+
+                    <TextView
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:text="周一"
+                        android:textColor="#ffffffff"
+                        android:textSize="14.0dip" />
+
+                    <TextView
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:text="周二"
+                        android:textColor="#ffffffff"
+                        android:textSize="14.0dip" />
+
+                    <TextView
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:text="周三"
+                        android:textColor="#ffffffff"
+                        android:textSize="14.0dip" />
+
+                    <TextView
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:text="周四"
+                        android:textColor="#ffffffff"
+                        android:textSize="14.0dip" />
+
+                    <TextView
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:text="周五"
+                        android:textColor="#ffffffff"
+                        android:textSize="14.0dip" />
+
+                    <TextView
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:text="周六"
+                        android:textColor="#ffffffff"
+                        android:textSize="14.0dip" />
+                </LinearLayout>
+
+                <com.xsd.safecardapp.views.MyGridView
+                    android:id="@+id/gridview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:cacheColorHint="@color/safe_darkgray"
+                    android:clickable="true"
+                    android:clipChildren="true"
+                    android:columnWidth="55.0dip"
+                    android:horizontalSpacing="1.0dip"
+                    android:listSelector="@null"
+                    android:numColumns="7"
+                    android:paddingBottom="1.0dip"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="1.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+ 
+</ScrollView>
+</RelativeLayout><!-- From: file:/W:/Android/SvnParent/safeCardApp/src/main/res/layout/fragment_student_attendance.xml -->

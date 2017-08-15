@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <!-- ============= -->
+    <!-- 基本颜色 -->
+    <!-- ============= -->
+    <color name="bg_normal">#f9f9f9</color>
+    <color name="summer_sky">#39A9E2</color>
+    <color name="solitude">#E6EFF6</color>
+    
+    <color name="safe_black">#000000</color>
+    <color name="safe_white">#FFFFFF</color>
+    <color name="safe_red">#ff0000</color>
+    <color name="safe_blue">#2D72A7</color>
+    <color name="safe_yellow">#fffc00</color>
+    <color name="safe_darkgray">#696969</color>
+    <color name="safe_halftrans_white">#9fffffff</color>
+    <color name="safe_halftrans_black">#9f000000</color>
+    <color name="safe_transparent">#00000000</color>
+    
+    <color name="map_color">#2203a9f4</color>
+    
+    <!-- 首页 -->
+    <color name="safe_main_blue">#3BA1F7</color>
+    <color name="primary_text">#1D83CB</color>
+    
+    
+    
+    <color name="login_gray">#f4f4f9</color>
+    <color name="login_blue">#39A9E2</color>
+    <color name="et_gray">#aa666666</color>
+    <color name="me_fragment">#ffe8ecef</color>
+    
+    
+    <color name="path_color">#00caef</color>
+</resources>

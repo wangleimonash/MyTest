@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@drawable/bg_title" >
+        
+        <ImageButton
+            android:id="@+id/ib_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/default_btn_bg"
+            android:onClick="finishMyself"
+            android:src="@drawable/ic_back" />
+
+        <LinearLayout
+            android:id="@+id/ll_select_card"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/default_btn_bg"
+            android:clickable="true"
+            android:orientation="horizontal" >
+
+            
+
+            <TextView
+                android:id="@+id/tv_select_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="通讯录"
+                android:textColor="@color/safe_white"
+                android:textSize="@dimen/text_size_title_homepage" />
+
+            
+        </LinearLayout>
+    </RelativeLayout>
+    
+    <ListView 
+        android:id="@+id/lv_contacts"
+        android:layout_width="match_parent"
+                android:layout_height="match_parent"
+        ></ListView>
+    
+
+</LinearLayout>
+<!-- From: file:/W:/Android/SvnParent/safeCardApp/src/main/res/layout/activity_contacts.xml -->

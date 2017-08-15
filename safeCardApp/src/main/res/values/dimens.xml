@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ============= -->
+    <!-- 字体大小规范 -->
+    <!-- ============= -->
+    <dimen name="safe_com_text_size_large">18.0sp</dimen>
+    <dimen name="safe_com_text_size_normal">15.0sp</dimen>
+    <dimen name="safe_com_text_size_small">12.0sp</dimen>
+    <dimen name="safe_com_text_size_smaller">10.0sp</dimen>
+    <dimen name="safe_at_main_title_text_size">16.0sp</dimen>
+    <dimen name="safe_at_main_time_text_size">9.0sp</dimen>
+    <dimen name="text_size_title_homepage">18sp</dimen>
+    <dimen name="text_size_homepage_popup">15sp</dimen>
+    
+    
+    <!--顶部标题栏高度-->
+    <dimen name="title_height">48.0dp</dimen>
+    <!--首页下部显示位置信息-->
+    <dimen name="bottom_height_homepage">100.0dp</dimen>
+    <dimen name="popup_height_homepage">40dp</dimen>
+    <dimen name="popup_width_homepage">100dp</dimen>
+    
+
+</resources>
